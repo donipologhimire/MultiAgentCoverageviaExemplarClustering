@@ -1,10 +1,10 @@
-# Multi-Agent Coverage via Exemplar Clustering
+# Multi-Agent Coverage in Non-Convex and Uneven Environments via Exampler Clustering
 
 This repository contains the implementation of a multi-agent coverage strategy using exemplar clustering for optimal deployment points and visibility graph traversability calculations.
 
 ## Requirements
 
-Before running the scripts, you need to install the PyVisGraph package:
+Before running the scripts, you need to install the PyVisGraph package or use the package in this repo:
 
 ```bash
 pip install pyvisgraph
@@ -20,16 +20,16 @@ pip install -e .
 
 ## Terrain Environments
 
-Our approach was evaluated on different terrain types:
+We use two different terrains created in Blender. The initial blender file was sourced from the following paper [Gaussian Process-based Traversability Analysis for Terrain Mapless Navigation](https://github.com/abeleinin/gp-navigation).  
 
 **Hilly Terrain 1**:
 <p align="center">
-  <img src="figure/2025_visibility_hills_problem_statement.png" width="600" alt="Hilly Terrain">
+  <img src="figure/2025_visibility_hills_problem_statement.png" width="500" alt="Hilly Terrain">
 </p>
 
 **Hilly Terrain 2**:
 <p align="center">
-  <img src="figure/2025_visibility_traversability_non_convex.png" width="600" alt="Non-Convex Terrain">
+  <img src="figure/2025_visibility_traversability_non_convex.png" width="500" alt="Non-Convex Terrain">
 </p>
 
 ## Running the Experiments
@@ -64,14 +64,19 @@ This will generate traversability and elevation maps showing optimal paths:
 
 ### 3. Visibility Graph for Deployment
 
-The visibility graph helps identify optimal deployment locations for multi-agent coverage:
+The visibility graph helps identify optimal deployment locations for multi-agent coverage in non-convex environment:
+Check ```bash
+scripts/visibility_graph_2025.ipynb
+```
 
 <p align="center">
   <img src="figure/2025_visibility_deployment_hotspot.png" width="500" alt="Deployment Hotspots">
 </p>
 
 ### 4. Agent Deployment Policy
-
+Check ```bash
+scripts/visibility_graph_2025.ipynb
+```
 Finally, run the deployment policy script to determine the optimal placement of agents:
 
 ```bash
@@ -80,16 +85,16 @@ python scripts/deployment_policy.py
 
 This script uses exemplar clustering to identify the best positions for deploying agents to maximize coverage while considering terrain traversability constraints.
 
-## Results
+## Traversability Graph for deployment
+<p align="center">
+  <img src="figure/2025_visibility_traversability_deployment1.png
+" width="500" alt="Multi Agent Deployment">
+</p>
 
 The figures directory contains all the result visualizations from the experiments. The deployment policy uses a cost matrix approach to identify exemplar points that provide optimal coverage of the target region.
 
-## Implementation Details
 
-The implementation combines:
-- RRT* path planning with traversability costs
-- Visibility graph construction for efficient path planning
-- Exemplar clustering for identifying optimal deployment points
-- Terrain analysis for traversability estimation
+## Acknowledgements
+We want to thank the authors of [Gaussian Process-based Traversability Analysis for Terrain Mapless Navigation](https://github.com/abeleinin/gp-navigation) and [Pyvisgraph](https://github.com/TaipanRex/pyvisgraph.git)
 
-Each script can be run independently or as part of the complete workflow for multi-agent coverage planning.
+We have also released the terrain dae file for people who want to build upon it.
