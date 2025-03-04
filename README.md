@@ -35,6 +35,10 @@ We use two different terrains created in Blender. The initial blender file was s
 ## Running the Experiments
 
 ### 1. Visibility Graph Generation
+Check 
+```bash
+scripts/visibility_graph_2025.ipynb
+```
 
 The visibility graph provides efficient path planning by connecting visible points in the environment:
 
@@ -75,10 +79,7 @@ scripts/visibility_graph_2025.ipynb
 </p>
 
 ### 4. Agent Deployment Policy
-Check 
-```bash
-scripts/visibility_graph_2025.ipynb
-```
+
 Finally, run the deployment policy script to determine the optimal placement of agents:
 
 ```bash
