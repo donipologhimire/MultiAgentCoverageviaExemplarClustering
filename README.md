@@ -4,13 +4,9 @@ This repository contains the implementation of a multi-agent coverage strategy u
 
 ## Requirements
 
-Before running the scripts, you need to install the PyVisGraph package or use the package in this repo:
+Before running the scripts, you need to  the PyVisGraph package or use the package in this repo:
 
-```bash
-pip install pyvisgraph
-```
-
-Or install from the source:
+Install from the source:
 
 ```bash
 git clone https://github.com/TaipanRex/pyvisgraph.git
@@ -20,7 +16,7 @@ pip install -e .
 
 ## Terrain Environments
 
-We use two different terrains created in Blender. The initial blender file was sourced from the following paper [Gaussian Process-based Traversability Analysis for Terrain Mapless Navigation](https://github.com/abeleinin/gp-navigation).  
+We use two different terrains created in Blender. The initial blender file was sourced from the following paper and github repo [Gaussian Process-based Traversability Analysis for Terrain Mapless Navigation](https://github.com/abeleinin/gp-navigation).  
 
 **Hilly Terrain 1**:
 <p align="center">
