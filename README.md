@@ -65,7 +65,8 @@ This will generate traversability and elevation maps showing optimal paths:
 ### 3. Visibility Graph for Deployment
 
 The visibility graph helps identify optimal deployment locations for multi-agent coverage in non-convex environment:
-Check ```bash
+Check 
+```bash
 scripts/visibility_graph_2025.ipynb
 ```
 
@@ -74,7 +75,8 @@ scripts/visibility_graph_2025.ipynb
 </p>
 
 ### 4. Agent Deployment Policy
-Check ```bash
+Check 
+```bash
 scripts/visibility_graph_2025.ipynb
 ```
 Finally, run the deployment policy script to determine the optimal placement of agents:
