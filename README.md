@@ -78,7 +78,7 @@ scripts/visibility_graph_2025.ipynb
   <img src="figure/2025_visibility_deployment_hotspot.png" width="500" alt="Deployment Hotspots">
 </p>
 
-### 4. Agent Deployment Policy
+### 4. Traversability Graph for deployment
 
 Finally, run the deployment policy script to determine the optimal placement of agents:
 
@@ -88,10 +88,8 @@ python scripts/deployment_policy.py
 
 This script uses exemplar clustering to identify the best positions for deploying agents to maximize coverage while considering terrain traversability constraints.
 
-## Traversability Graph for deployment
 <p align="center">
-  <img src="figure/2025_visibility_traversability_deployment1.png
-" width="500" alt="Multi Agent Deployment">
+  <img src="figure/2025_visibility_traversability_deployment1.png" width="500" alt="Multi Agent Deployment">
 </p>
 
 The figures directory contains all the result visualizations from the experiments. The deployment policy uses a cost matrix approach to identify exemplar points that provide optimal coverage of the target region.
