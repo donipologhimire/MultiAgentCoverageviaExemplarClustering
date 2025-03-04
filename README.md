@@ -96,6 +96,6 @@ The figures directory contains all the result visualizations from the experiment
 
 
 ## Acknowledgements
-We want to thank the authors of [Gaussian Process-based Traversability Analysis for Terrain Mapless Navigation](https://github.com/abeleinin/gp-navigation) and [Pyvisgraph](https://github.com/TaipanRex/pyvisgraph.git)
+We want to thank the authors of the following repositories: [Gaussian Process-based Traversability Analysis for Terrain Mapless Navigation](https://github.com/abeleinin/gp-navigation) and [Pyvisgraph](https://github.com/TaipanRex/pyvisgraph.git)
 
 We have also released the terrain dae file for people who want to build upon it.
