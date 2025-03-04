@@ -23,10 +23,14 @@ pip install -e .
 Our approach was evaluated on different terrain types:
 
 **Hilly Terrain 1**:
-![Hilly Terrain](figure/2025_visibility_hills_problem_statement.png)
+<p align="center">
+  <img src="figure/2025_visibility_hills_problem_statement.png" width="600" alt="Hilly Terrain">
+</p>
 
 **Hilly Terrain 2**:
-![Non-Convex Terrain](figure/2025_visibility_traversability_non_convex.png)
+<p align="center">
+  <img src="figure/2025_visibility_traversability_non_convex.png" width="600" alt="Non-Convex Terrain">
+</p>
 
 ## Running the Experiments
 
@@ -34,7 +38,9 @@ Our approach was evaluated on different terrain types:
 
 The visibility graph provides efficient path planning by connecting visible points in the environment:
 
-![Visibility Graph](figure/2025_visibility_VisGraph.png)
+<p align="center">
+  <img src="figure/2025_visibility_VisGraph.png" width="500" alt="Visibility Graph">
+</p>
 
 ### 2. RRT Path Planning with Traversability
 
@@ -47,16 +53,22 @@ python scripts/RRT_start_traversability.py
 This will generate traversability and elevation maps showing optimal paths:
 
 **Traversability Map**:
-![Traversability Map](figure/2025_visibility_traversability.png)
+<p align="center">
+  <img src="figure/2025_visibility_traversability.png" width="500" alt="Traversability Map">
+</p>
 
 **Elevation Map**:
-![Elevation Map](figure/2025_visibility_elevation_map.png)
+<p align="center">
+  <img src="figure/2025_visibility_elevation_map.png" width="500" alt="Elevation Map">
+</p>
 
 ### 3. Visibility Graph for Deployment
 
 The visibility graph helps identify optimal deployment locations for multi-agent coverage:
 
-![Deployment Hotspots](figure/2025_visibility_deployment_hotspot.png)
+<p align="center">
+  <img src="figure/2025_visibility_deployment_hotspot.png" width="500" alt="Deployment Hotspots">
+</p>
 
 ### 4. Agent Deployment Policy
 
