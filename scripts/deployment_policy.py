@@ -12,7 +12,7 @@ import pandas as pd
 # ----------------------
 # RRT* Parameters
 STEP_LEN = 3.0        # Step size for RRT* path planning
-ITER_MAX = 1000        # Maximum iterations for RRT*
+ITER_MAX = 1500        # Maximum iterations for RRT*
 
 # Traversability Parameters
 CRIT_STEP_HEIGHT = 0.3    # Critical value for step height
@@ -330,7 +330,7 @@ if __name__ == "__main__":
     goal_means = [(40, 80), (60, 80),(50,40),(80,60),(70,30)] # terrain1
     goal_points = []
     for mean_x, mean_y in goal_means:
-        goal_points.extend([(mean_x + np.random.randint(-18, 15), mean_y + np.random.randint(-2, 8)) for _ in range(40)])
+        goal_points.extend([(mean_x + np.random.randint(-18, 15), mean_y + np.random.randint(-2, 8)) for _ in range(55)])
     filtered_start_points = filter_points(start_points, traversability_map)
     filtered_goal_points = filter_points(goal_points, traversability_map)
     start_points = [tuple(point) for point in filtered_start_points]
@@ -340,10 +340,12 @@ if __name__ == "__main__":
     results = []
     counter = 0
     cost_matrix = []
+    total_paths = len(start_points) * len(goal_points)
     for start in start_points:
         costs = []
         for goal in goal_points:
             counter = counter + 1
+            print(f"\rProgress: {counter}/{total_paths} ({counter/total_paths*100:.1f}%)", end='', flush=True)
             if goal == start:
                 path,cost= [], float(0)  # Return immediately if condition is met
             else:

@@ -90,6 +90,11 @@ This script uses exemplar clustering to identify the best positions for deployin
 
 The figures directory contains all the result visualizations from the experiments. The deployment policy uses a cost matrix approach to identify exemplar points that provide optimal coverage of the target region.
 
+The animation below shows the simulated trajectories of deployed agents reaching their target positions:
+
+<p align="center">
+  <img src="figure/multi_trajectories.gif" width="500" alt="Agent Trajectories Animation">
+</p>
 
 ## Acknowledgements
 We want to thank the authors of the following repositories: [Gaussian Process-based Traversability Analysis for Terrain Mapless Navigation](https://github.com/abeleinin/gp-navigation) and [Pyvisgraph](https://github.com/TaipanRex/pyvisgraph.git)
