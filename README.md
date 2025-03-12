@@ -90,7 +90,7 @@ This script uses exemplar clustering to identify the best positions for deployin
 
 The figures directory contains all the result visualizations from the experiments. The deployment policy uses a cost matrix approach to identify exemplar points that provide optimal coverage of the target region.
 
-The animation below shows the simulated trajectories of deployed agents reaching their target positions:
+The animation below shows the simulated trajectories of agents reaching their final deployment positions:
 
 <p align="center">
   <img src="figure/multi_trajectories.gif" width="500" alt="Agent Trajectories Animation">
