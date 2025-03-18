@@ -239,6 +239,8 @@ def rrt_star(start, goal, grid, traversability_map, step_len=STEP_LEN, iter_max=
 
 # Get the absolute path of the current script
 script_dir = os.path.dirname(os.path.abspath(__file__))
+np.random.seed(40)  # For reproducibility
+random.seed(40)     # For reproducibility
 # Go up one level to the project root
 project_root = os.path.dirname(script_dir)
 # Construct path to the worlds directory
