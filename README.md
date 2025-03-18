@@ -13,7 +13,10 @@ git clone https://github.com/TaipanRex/pyvisgraph.git
 cd pyvisgraph
 pip install -e .
 ```
-
+additional requirements 
+```bash
+pip install -r requirements.txt
+```
 ## Terrain Environments
 
 We use two different terrains created in Blender. The initial blender file was sourced from the following paper and github repo [Gaussian Process-based Traversability Analysis for Terrain Mapless Navigation](https://github.com/abeleinin/gp-navigation).  
