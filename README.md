@@ -1,6 +1,8 @@
 # NavEX: A Multi-Agent Coverage in Non-Convex and Uneven Environments via Exampler Clustering
 
 This repository contains the implementation of a multi-agent coverage strategy using exemplar clustering for optimal deployment points where the distance metrics are defined using visibility graph and traversability based RRT*.
+For more details, please refer to our paper: [https://arxiv.org/pdf/2504.21113](https://arxiv.org/pdf/2504.21113)
+
 
 ## Requirements
 
